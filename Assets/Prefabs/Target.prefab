@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   material: {fileID: 2100000, guid: 5b27bbb4af9e14443ab6da64c6469b88, type: 2}
+  destroyGameObject: {fileID: 2606648140367683188}
 --- !u!33 &2606648140367683195
 MeshFilter:
   m_ObjectHideFlags: 0

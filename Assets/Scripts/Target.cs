@@ -6,6 +6,7 @@ public class Target : MonoBehaviour
 {
     public int points = 100;
     public Material material;
+    public GameObject destroyGameObject;
 
     private void Start()
     {
@@ -18,7 +19,10 @@ public class Target : MonoBehaviour
         if(collision.gameObject.CompareTag("Projectile"))
         {
             Game.Instance.AddPoints(points);
-            Destroy(transform.parent.gameObject);
+            if (destroyGameObject != null)
+            {
+                Destroy(destroyGameObject);
+            }
         }
     }
 }

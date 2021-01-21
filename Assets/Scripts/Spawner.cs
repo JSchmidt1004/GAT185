@@ -5,8 +5,8 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject spawnGameObject;
-    public float minSpawnTime = 2;
-    public float maxSpawnTime = 5;
+    [Range(1, 5)] public float minSpawnTime = 2;
+    [Range(5, 10)] public float maxSpawnTime = 5;
 
     private float spawnTimer;
 
